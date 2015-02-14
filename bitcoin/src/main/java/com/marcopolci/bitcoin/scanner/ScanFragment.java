@@ -60,9 +60,6 @@ import java.io.IOException;
 import java.util.EnumMap;
 import java.util.Map;
 
-/**
- * @author Andreas Schildbach
- */
 public final class ScanFragment extends Fragment implements SurfaceHolder.Callback
 {
     public interface OnScanListener {

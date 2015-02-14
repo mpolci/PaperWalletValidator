@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment class="com.marcopolci.bitcoin.scanner.ScanFragment"
+        android:id="@+id/fragmentScan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tableData"
+        tools:layout="@layout/scan_fragment" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:text="@string/scan_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp" />
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:id="@+id/tableData"
+        android:orientation="horizontal"
+        android:layout_above="@+id/textResult"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textLabelAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_address"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="2dp"
+            android:layout_above="@+id/textLabelKey"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textAddress"
+            android:text="@string/hello_world"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textLabelAddress"
+            android:layout_toRightOf="@+id/textLabelAddress"
+            android:layout_toEndOf="@+id/textLabelAddress"
+            />
+
+        <TextView
+            android:id="@+id/textLabelKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_key"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="2dp"
+            android:layout_above="@id/textResult"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textKey"
+            android:text="@string/hello_world"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textLabelKey"
+            android:layout_toRightOf="@+id/textLabelKey"
+            android:layout_toEndOf="@+id/textLabelKey"
+            android:layout_alignLeft="@+id/textAddress"
+            />
+    </GridLayout>
+
+
+</RelativeLayout>

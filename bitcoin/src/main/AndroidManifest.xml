@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.marcopolci.bitcoin">
+
+    <application>
+
+    </application>
+    <activity android:name=".ScanActivity" android:label="ScanActivity"
+        android:configChanges="orientation|keyboard|keyboardHidden"
+        android:screenOrientation="portrait"
+        android:stateNotNeeded="true"
+        android:windowSoftInputMode="stateAlwaysHidden"
+        />
+</manifest>

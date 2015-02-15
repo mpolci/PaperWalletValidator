@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">PaperWalletValidator</string>
+    <string name="app_name">Paper Wallet Validator</string>
     <string name="action_settings">Settings</string>
     <string name="button_scan">Scan</string>
     <string name="passphrase">Passphrase</string>
-    <string name="passphrase_description">Insert passphrase to decode BIP38 key</string>
+    <string name="passphrase_description">Insert passphrase to decode BIP38 key. It may takes up to 2 minutes.</string>
     <string name="decode">Decode</string>
     <string name="bip38_progress_title">BIP38 private key</string>
     <string name="bip38_progress_description">Decoding…</string>

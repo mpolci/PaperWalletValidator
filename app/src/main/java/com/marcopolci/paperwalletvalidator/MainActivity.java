@@ -25,6 +25,7 @@ import android.content.DialogInterface;
 import android.media.MediaPlayer;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.ActionBarActivity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -46,8 +47,8 @@ import org.bitcoinj.params.MainNetParams;
 
 import java.util.regex.Pattern;
 
-
-public class MainActivity extends ActionBarActivity implements ScanFragment.OnScanListener{
+public class MainActivity extends FragmentActivity implements ScanFragment.OnScanListener{
+//public class MainActivity extends ActionBarActivity implements ScanFragment.OnScanListener{
 
     private static final int RESUME_SCAN_DELAY = 1500;
     private TextView textAddress;
@@ -99,13 +100,12 @@ public class MainActivity extends ActionBarActivity implements ScanFragment.OnSc
         textResult = (TextView) findViewById(R.id.textResult);
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        // Inflate the menu; this adds items to the action bar if it is present.
+//        getMenuInflater().inflate(R.menu.menu_main, menu);
+//        return true;
+//    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
